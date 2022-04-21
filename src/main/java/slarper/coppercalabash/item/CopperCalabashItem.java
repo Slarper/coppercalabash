@@ -39,6 +39,7 @@ public class CopperCalabashItem extends Item {
         entity.saveSelfNbt(calabash.getOrCreateSubNbt(EntityType.ENTITY_TAG_KEY));
 
         NickItem.putNickName(CopperCalabashFilledItem.COPPER_CALABASH_FILLED_NICKNAME_PREFIX + entity.getType().getTranslationKey(), calabash);
+        // you can put model nbt here.
         user.setStackInHand(hand,calabash);
 
         return super.useOnEntity(stack, user, entity, hand);
