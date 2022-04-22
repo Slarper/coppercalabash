@@ -21,7 +21,7 @@ public class CopperCalabashItem extends Item {
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
 
 
-        // Only catch passive mob
+        // Only catch animals
         if (!(entity instanceof AnimalEntity)) {
             return ActionResult.PASS;
         }
